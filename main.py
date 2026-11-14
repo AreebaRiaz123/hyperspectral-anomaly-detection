@@ -1,10 +1,5 @@
-"""Run all anomaly detectors on benchmark scenes and save results.
-
-Usage:
-    python main.py                          # all methods, all datasets
-    python main.py --datasets gulfport      # one dataset
-    python main.py --methods RX AE          # selected methods
-"""
+# run all methods on datasets and save results
+# example: python main.py --datasets gulfport --methods RX AE
 import argparse
 import os
 import sys
@@ -57,7 +52,7 @@ def main():
         plot_separability(name, maps, gt, f"{args.out}/{name}_boxplot.png")
         table[name] = aucs
 
-    # AUC table (markdown), best value per row in bold
+    # make AUC table, best value in bold
     lines = ["| Dataset | " + " | ".join(args.methods) + " |",
              "|---" * (len(args.methods) + 1) + "|"]
     for name, aucs in table.items():

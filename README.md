@@ -1,8 +1,8 @@
 # Deep Learning-Based Hyperspectral Anomaly Detection
 
-**A comparative study of classical and deep learning methods** — Final Year Project (BS Computer Science), University of Agriculture, Faisalabad.
+A comparative study of classical and deep learning methods. Final Year Project (BS Computer Science), University of Agriculture, Faisalabad.
 
-> 🚧 **Status: work in progress.** Classical baselines and three deep learning models are implemented and evaluated on six benchmark scenes. Low-rank / tensor-based deep models are under development.
+**Status:** work in progress. Classical baselines and three deep learning models are implemented and evaluated on six benchmark scenes. Low-rank / tensor-based deep models are under development.
 
 ## Overview
 
@@ -112,4 +112,4 @@ Benchmark scenes from the public Airport-Beach-Urban (ABU) collection (Kang et a
 
 ## Author
 
-**Areeba Riaz** — [GitHub](https://github.com/AreebaRiaz123)
+Areeba Riaz, [GitHub](https://github.com/AreebaRiaz123)

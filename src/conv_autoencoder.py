@@ -1,13 +1,9 @@
-"""Spectral-spatial convolutional autoencoder.
-
-The whole image is treated as a multi-channel input (bands = channels).
-Convolutions let the model use each pixel's spatial neighbourhood, so the
-reconstruction reflects local background structure. Pixels that do not fit
-their surroundings are reconstructed poorly and get a high anomaly score.
-"""
 import numpy as np
 import torch
 import torch.nn as nn
+
+# Convolutional AE: uses neighbouring pixels too (spectral + spatial)
+# whole image is one input, bands are used as channels
 
 
 class ConvAE(nn.Module):
